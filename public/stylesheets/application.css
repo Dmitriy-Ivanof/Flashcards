@@ -1,0 +1,133 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital@0;1&display=swap");
+body {
+  text-align: center;
+  background-image: url("https://www.godfatherstyle.com/wp-content/uploads/2016/02/beautiful-tulip-flowers-hd-wallpapers-cool-desktop-background-photographs-widescreen.jpg");
+  background-image: no-repeat;
+  min-width: 100vw;
+  height: 100vh;
+  font-style: italic;
+  font-family: "Roboto", sans-serif;
+  /* padding: 40px;
+  background-color: antiquewhite; */
+}
+
+.container {
+  margin: 20px auto;
+  width: 600px;
+  padding: 0px 20px 20px 20px;
+  /* border: 1px dotted black; */
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+}
+.topicsDiv div {
+  font-family: "Roboto", sans-serif;
+  width: 300px;
+  height: 150px;
+  padding: 10px;
+  font-size: 30px;
+  margin: 60px;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  background-color: #927575;
+  border-radius: 15px;
+}
+.topicsDiv div:hover {
+  color: #ccc;
+  background-color: #a83c3c;
+  box-shadow: 30px 25px 5px rgb(151 125 125);
+}
+.topicsDiv {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+h1 {
+  color: #df6161;
+  font-size: 60px;
+}
+p {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+a {
+  text-decoration: none;
+  color: black;
+  font-size: 22px;
+}
+a:hover {
+  text-decoration: none;
+}
+a:active {
+  color: rgb(241, 245, 245);
+  text-decoration: none;
+}
+a:visited {
+  color: rgb(241, 205, 205);
+}
+
+th {
+  text-align: left;
+
+  background-image: url("https://www.godfatherstyle.com/wp-content/uploads/2016/02/beautiful-tulip-flowers-hd-wallpapers-cool-desktop-background-photographs-widescreen.jpg");
+  background-image: no-repeat;
+  min-width: 100vw;
+  height: 100vh;
+}
+.img {
+  width: 70px;
+  height: 70px;
+}
+.nav-item,
+.nav-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.newText {
+  padding: 40px;
+}
+.question {
+  /* margin: 20px; */
+  font-size: 40px;
+  font-family: "Roboto", sans-serif;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+}
+.answerForm {
+  padding: 20px;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.form-control {
+  padding: 20px;
+}
+
+.btn_btn-primary {
+  font-style: italic;
+  color: #635656;
+  padding: 10px;
+  margin: 40px;
+  border: none;
+  border-radius: 15px;
+  text-align: center;
+  background-color: #e89898f7;
+}
+
+#answer {
+  border-radius: 15px;
+}
+
+.btn_btn-primary:hover {
+  transform: scale(1.02);
+}
+.btn_btn-primary:active {
+  transform: scale(0.98);
+}
