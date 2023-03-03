@@ -1,32 +1,29 @@
-const number = document.querySelector(".wasd");
-const newDiv = document.querySelector("#die-container");
-// console.log(number);
-number.addEventListener("submit", async (e) => {
-  e.preventDefault();
-  const { sides, method, action } = e.target;
-  // console.log(sides.value, method, action);
+const answerForm = document.querySelector('.answerForm');
+const divOne = document.querySelector('.newText');
 
+let count = 0;
+
+answerForm.addEventListener('submit', async (event) => {
+  event.preventDefault();
+  count += 1;
+  if (count > 5) {
+    window.location.assign('/topic');
+  }
+
+  const { text, method, action } = event.target;
+  console.log(text.value);
+  console.log(count);
   const zapros = await fetch(action, {
     method,
     headers: {
-      "Content-Type": "application/json",
+      'Content-Type': 'application/json',
     },
     body: JSON.stringify({
-      num: sides.value,
+      name: text.value,
+      countNum: count,
     }),
   });
 
-  const newZapros = await zapros.text();
-  // const newZapros = await zapros.json();
-
-  // newDiv.firstChild?.remove();
-  // newDiv.insertAdjacentHTML("beforeend", newZapros);
-
-  newDiv.innerHTML = newZapros;
-
-  // PSEUDO-код:
-  // 1 - перехватить событие отправки формы
-  // 2 - предотвратить действие по умолчанию для этого события
-  // 3 - отправить AJAX-сообщение на сервер
-  // 4 - когда сообщение AJAX готово, отображаем новый бросок кубика
+  const newZapros = await zapros.json();
+  divOne.innerHTML = newZapros;
 });
