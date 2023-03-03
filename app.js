@@ -4,11 +4,25 @@ const express = require('express');
 
 
 
+
 const app = express();
 const PORT = 3000;
 const path = require('path');
 const morgan = require('morgan');
 const React = require('react');
+
+const ssr = require('./middleware/ssr');
+
+
+
+
+app.use(express.json());
+
+app.use(ssr);
+
+
+
+
 
 const testDbConnection = require('./db/testDbConnection');
 
@@ -37,4 +51,5 @@ app
     console.log(error.message);
     /* eslint-enable no-console */
   });
+
 

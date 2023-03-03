@@ -67,3 +67,34 @@ th {
   align-items: center;
   justify-content: center;
 }
+.newText {
+  padding: 40px;
+}
+.question {
+  /* margin: 20px; */
+  font-size: 20px;
+  font-family: sans-serif;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+}
+.answerForm {
+  padding: 20px;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.form-control {
+  padding: 20px;
+}
+
+.btn_btn-primary {
+  margin: 40px;
+
+  border-radius: 15px;
+  text-align: center;
+  background-color: #e759a0c0;
+}
