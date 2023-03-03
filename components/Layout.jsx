@@ -1,10 +1,14 @@
 const React = require('react');
+
+
 const Navbar = require('./Navbar');
+
 
 module.exports = function Layout({ title, children }) {
   return (
     <html lang='en'>
       <head>
+
         <title>{title}</title>
         <link
           rel='icon'
@@ -16,6 +20,7 @@ module.exports = function Layout({ title, children }) {
           rel='stylesheet'
           href='https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css'
         ></link> */}
+
         <link
           href='https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css'
           rel='stylesheet'
