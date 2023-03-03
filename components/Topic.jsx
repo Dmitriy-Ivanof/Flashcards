@@ -6,7 +6,7 @@ module.exports = function Topics({ title, arrTopics }) {
     <Layout title={title}>
       <br />
       <br />
-      <h1>Choose theme </h1>
+      <h1>Выбор темы</h1>
 
       <div className="container">
         <div className="topicsDiv">

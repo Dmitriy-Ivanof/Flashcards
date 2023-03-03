@@ -17,7 +17,7 @@ const Navbar = ({}) => {
                 aria-current="page"
                 href="/topic"
               >
-                Topics
+                Темы
               </a>
             </li>
             <li className="nav-item">
@@ -25,7 +25,7 @@ const Navbar = ({}) => {
                 className="nav-link text-light text-uppercase"
                 href="/topic/question/1"
               >
-                Questions
+                Вопросы
               </a>
             </li>
             <li className="nav-item">
@@ -33,7 +33,7 @@ const Navbar = ({}) => {
                 className="nav-link text-light text-right text-uppercase"
                 href="/login"
               >
-                LogIn
+                Войти
               </a>
             </li>
             <li className="nav-item">
@@ -41,7 +41,7 @@ const Navbar = ({}) => {
                 className="nav-link text-light text-uppercase"
                 href="/registration"
               >
-                Registration
+                Регистрация
               </a>
             </li>
           </ul>

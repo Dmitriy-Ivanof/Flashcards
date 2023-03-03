@@ -1,10 +1,12 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital@0;1&display=swap");
 body {
   text-align: center;
   background-image: url("https://www.godfatherstyle.com/wp-content/uploads/2016/02/beautiful-tulip-flowers-hd-wallpapers-cool-desktop-background-photographs-widescreen.jpg");
   background-image: no-repeat;
   min-width: 100vw;
   height: 100vh;
-
+  font-style: italic;
+  font-family: "Roboto", sans-serif;
   /* padding: 40px;
   background-color: antiquewhite; */
 }
@@ -15,14 +17,16 @@ body {
   padding: 0px 20px 20px 20px;
   /* border: 1px dotted black; */
   text-align: center;
+  font-family: "Roboto", sans-serif;
 }
 .topicsDiv div {
+  font-family: "Roboto", sans-serif;
   width: 300px;
   height: 150px;
   padding: 10px;
   font-size: 30px;
   margin: 60px;
-  border: 1px solid black;
+  border: none;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -87,8 +91,8 @@ th {
 }
 .question {
   /* margin: 20px; */
-  font-size: 20px;
-  font-family: sans-serif;
+  font-size: 40px;
+  font-family: "Roboto", sans-serif;
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
@@ -107,9 +111,23 @@ th {
 }
 
 .btn_btn-primary {
+  font-style: italic;
+  color: #635656;
+  padding: 10px;
   margin: 40px;
-
+  border: none;
   border-radius: 15px;
   text-align: center;
-  background-color: #e759a0c0;
+  background-color: #e89898f7;
+}
+
+#answer {
+  border-radius: 15px;
+}
+
+.btn_btn-primary:hover {
+  transform: scale(1.02);
+}
+.btn_btn-primary:active {
+  transform: scale(0.98);
 }
