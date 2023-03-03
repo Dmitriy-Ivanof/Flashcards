@@ -1,10 +1,11 @@
 const React = require('react');
 const Layout = require('./Layout');
-// const Random = require('./Question');
+
 
 module.exports = function Topics({ title, arrTopics }) {
   return (
     <Layout title={title}>
+
       <h1>Choose theme </h1>
       <p>Bla-la-la</p>
       <div className="container">
@@ -25,6 +26,7 @@ module.exports = function Topics({ title, arrTopics }) {
         </div>
         {/* <form className="wasd" method="post" action="/">
           <p>
+
             <label htmlFor="sides">
               How many sides?
               <input
@@ -39,6 +41,10 @@ module.exports = function Topics({ title, arrTopics }) {
             <input type="submit" value="Roll the Die" />
           </p>
         </form> */}
+
+
+        <div id='die-container'></div>
+
       </div>
     </Layout>
   );
