@@ -11,7 +11,7 @@ module.exports = function Topics({ title, arrTopics }) {
       <div className="container">
         <div className="topicsDiv">
           {arrTopics.map((topic) => (
-            <a href={`/topic/${topic.id}`} className="button">
+            <a href={`/topic/question/${topic.id}`} className="button">
               <div>
                 {/* {topic.name} */}
 

@@ -7,12 +7,17 @@ module.exports = {
       "Topics",
       [
         {
-          name: "Группа Бобры ElbrusBootCamp - SPb",
+          name: "Beavers group of Elbrus bootсamp SPb",
           createdAt: new Date(),
           updatedAt: new Date(),
         },
         {
-          name: "Умные и красивые",
+          name: "Smart and beautiful",
+          createdAt: new Date(),
+          updatedAt: new Date(),
+        },
+        {
+          name: "Interesting in Russia",
           createdAt: new Date(),
           updatedAt: new Date(),
         },

@@ -45,7 +45,7 @@ module.exports = {
         },
         {
           question: "Мальнькая и сморщенная, есть у каждой женщины?",
-          answer: "изюменка",
+          answer: "изюминка",
           topicId: 2,
           createdAt: new Date(),
           updatedAt: new Date(),
