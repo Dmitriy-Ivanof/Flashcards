@@ -1,20 +1,19 @@
-const React = require('react');
+const React = require("react");
 
-
-const Navbar = require('./Navbar');
-
+const Navbar = require("./Navbar");
 
 module.exports = function Layout({ title, children }) {
   return (
-    <html lang='en'>
+    <html lang="en">
       <head>
+        <meta charSet="utf-8"></meta>
 
         <title>{title}</title>
         <link
-          rel='icon'
-          href='public/favicon.jpg'
-          sizes='32x32'
-          type='image/gif'
+          rel="icon"
+          href="public/favicon.jpg"
+          sizes="32x32"
+          type="image/gif"
         ></link>
         {/* <link
           rel='stylesheet'
@@ -22,10 +21,10 @@ module.exports = function Layout({ title, children }) {
         ></link> */}
 
         <link
-          href='https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css'
-          rel='stylesheet'
-          integrity='sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC'
-          crossOrigin='anonymous'
+          href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+          rel="stylesheet"
+          integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+          crossOrigin="anonymous"
         ></link>
 
         {/* <link rel='stylesheet' href='/stylesheets/normalize.css' /> */}
@@ -37,10 +36,10 @@ module.exports = function Layout({ title, children }) {
         ></link> */}
 
         {/* your CSS styles */}
-        <link rel='stylesheet' href='/stylesheets/application.css' />
+        <link rel="stylesheet" href="/stylesheets/application.css" />
 
         {/* your client JavaScript code */}
-        <script defer src='/js/application.js' />
+        <script defer src="/js/application.js" />
 
         <title>{title}</title>
       </head>

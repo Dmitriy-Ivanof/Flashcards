@@ -1,13 +1,13 @@
-const React = require('react');
-const Layout = require('./Layout');
-
+const React = require("react");
+const Layout = require("./Layout");
 
 module.exports = function Topics({ title, arrTopics }) {
   return (
     <Layout title={title}>
-
+      <br />
+      <br />
       <h1>Choose theme </h1>
-      <p>Bla-la-la</p>
+
       <div className="container">
         <div className="topicsDiv">
           {arrTopics.map((topic) => (
@@ -42,9 +42,7 @@ module.exports = function Topics({ title, arrTopics }) {
           </p>
         </form> */}
 
-
-        <div id='die-container'></div>
-
+        <div id="die-container"></div>
       </div>
     </Layout>
   );
