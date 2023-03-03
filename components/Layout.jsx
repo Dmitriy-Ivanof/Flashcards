@@ -1,4 +1,4 @@
-const React = require("react");
+const React = require('react');
 
 module.exports = function Layout({ title, children }) {
   return (
@@ -7,6 +7,7 @@ module.exports = function Layout({ title, children }) {
         {/* normalize.css removes cross-browser differences in defaults, e.g.,
         differences in how form elements appear between Firefox and IE
         See: http://necolas.github.com/normalize.css/ */}
+        <meta charSet="utf-8" />
         <link rel="stylesheet" href="/stylesheets/normalize.css" />
         <link
           href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"

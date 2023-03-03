@@ -1,9 +1,36 @@
+body {
+  text-align: center;
+  padding: 40px;
+  background-color: antiquewhite;
+}
+
 .container {
   margin: 20px auto;
   width: 600px;
   padding: 0px 20px 20px 20px;
-  border: 1px dotted black;
+  /* border: 1px dotted black; */
   text-align: center;
+}
+.topicsDiv div {
+  padding: 10px;
+  border: 1px solid black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.topicsDiv {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+p {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+a {
+  text-decoration: none;
+  color: black;
 }
 
 th {

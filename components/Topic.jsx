@@ -1,15 +1,29 @@
-const React = require("react");
-const Layout = require("./Layout");
-const Random = require("./Question");
+const React = require('react');
+const Layout = require('./Layout');
+// const Random = require('./Question');
 
-module.exports = function Topic({ title }) {
+module.exports = function Topics({ title, arrTopics }) {
   return (
     <Layout title={title}>
+      <h1>Choose theme </h1>
+      <p>Bla-la-la</p>
       <div className="container">
-        <h1>Simplest Possible AJAX</h1>
-        <p>This contrived app will simulate a roll of a n-sided die.</p>
+        <div className="topicsDiv">
+          {arrTopics.map((topic) => (
+            <a href={`/topic/${topic.id}`} className="button">
+              <div>
+                {/* {topic.name} */}
 
-        <form className="wasd" method="post" action="/">
+                {/* <h5 className="card-title">{topic.name}</h5> */}
+                {/* <a href={`/${topic.name}`} className="button"> */}
+                {topic.name}
+              </div>
+            </a>
+          ))}
+
+          {/* <i className="bi bi-trash icons" data-id={topic.id} /> */}
+        </div>
+        {/* <form className="wasd" method="post" action="/">
           <p>
             <label htmlFor="sides">
               How many sides?
@@ -24,9 +38,7 @@ module.exports = function Topic({ title }) {
           <p>
             <input type="submit" value="Roll the Die" />
           </p>
-        </form>
-
-        <div id="die-container"></div>
+        </form> */}
       </div>
     </Layout>
   );
