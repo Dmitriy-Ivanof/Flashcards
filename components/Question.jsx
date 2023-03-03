@@ -3,6 +3,7 @@ const Layout = require('./Layout');
 
 module.exports = function Question({ title, firstQ }) {
   return (
+
     <Layout title={title}>
       <div>
         <div className="question">
@@ -19,6 +20,7 @@ module.exports = function Question({ title, firstQ }) {
             </button>
           </form>
         </div>
+
       </div>
     </Layout>
   );

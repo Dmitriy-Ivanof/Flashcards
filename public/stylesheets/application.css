@@ -1,33 +1,71 @@
+body {
+  text-align: center;
+  background-image: url("https://www.godfatherstyle.com/wp-content/uploads/2016/02/beautiful-tulip-flowers-hd-wallpapers-cool-desktop-background-photographs-widescreen.jpg");
+  background-image: no-repeat;
+  min-width: 100vw;
+  height: 100vh;
+
+  /* padding: 40px;
+  background-color: antiquewhite; */
+}
+
 .container {
   margin: 20px auto;
   width: 600px;
   padding: 0px 20px 20px 20px;
-  border: 1px dotted black;
+  /* border: 1px dotted black; */
   text-align: center;
+}
+.topicsDiv div {
+  width: 300px;
+  height: 150px;
+  padding: 20px;
+
+  margin: 60px;
+  border: 1px solid black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  background-color: #927575;
+  border-radius: 15px;
+}
+.topicsDiv div:hover {
+  color: #ccc;
+  background-color: #a83c3c;
+  box-shadow: 30px 25px 5px rgb(151 125 125);
+}
+.topicsDiv {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+p {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+a {
+  text-decoration: none;
+  color: black;
 }
 
 th {
   text-align: left;
-}
 
-a#roll {
-  padding: 5px;
-  background-color: #ccc;
-  border: 1px solid #222;
-  text-decoration: none;
-  color: #222;
-  font-weight: bold;
+  background-image: url("https://www.godfatherstyle.com/wp-content/uploads/2016/02/beautiful-tulip-flowers-hd-wallpapers-cool-desktop-background-photographs-widescreen.jpg");
+  background-image: no-repeat;
+  min-width: 100vw;
+  height: 100vh;
 }
-
-.die {
-  font-size: 2em;
-  padding: 20px;
+.img {
+  width: 70px;
+  height: 70px;
 }
-
-.roll {
-  border: solid 2px #666;
-  padding: 20px;
-  background-color: orange;
+.nav-item,
+.nav-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .newText {
   padding: 40px;

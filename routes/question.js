@@ -2,6 +2,7 @@ const express = require('express');
 const ReactDOMServer = require('react-dom/server');
 const React = require('react');
 
+
 const Questions = require('../components/Question');
 
 const router = express.Router();
@@ -31,5 +32,6 @@ router.post('/', async (req, res) => {
   const html = ReactDOMServer.renderToStaticMarkup(random);
   res.json(html);
 });
+
 
 module.exports = router;
