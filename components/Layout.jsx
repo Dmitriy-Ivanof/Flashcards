@@ -6,7 +6,12 @@ module.exports = function Layout({ title, children }) {
     <html lang='en'>
       <head>
         <title>{title}</title>
-
+        <link
+          rel='icon'
+          href='public/favicon.jpg'
+          sizes='32x32'
+          type='image/gif'
+        ></link>
         {/* <link
           rel='stylesheet'
           href='https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css'
